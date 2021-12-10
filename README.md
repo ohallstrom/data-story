@@ -4,6 +4,8 @@
 
 #### Team members: Ralph, Oskar, Celinna, Karim
 
+Click [here](https://ohallstrom.github.io/data-story/) to reach our website
+
 Website was created using [Beautiful Jykell](https://github.com/daattali/beautiful-jekyll).
 
 (Ongoing project)
