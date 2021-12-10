@@ -1,7 +1,5 @@
 ---
 layout: page
-title: Test
-subtitle: subbbb
 use-site-title: true
 ---
 ## No patterns do not mean no success.
