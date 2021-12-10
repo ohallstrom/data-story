@@ -6,7 +6,7 @@ subtitle: The R.O.C.K TEAM
 
 We rock your word of data science
 
-### Ralph
+### Raphaël
 
 French Life Science Hero
 
