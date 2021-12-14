@@ -14,3 +14,20 @@ However, we could not find any patterns between speakers and the way they talk. 
 in which we can not tell exactly who you are simply by looking at the used language features, is sure much more fun.
 
 Please follow us on this journey, in which we present the differences (or maybe more appropriately the lack of them?) between speakers and their attributes.
+
+## What data is our story based on?
+
+
+## What does our data look like?
+Box plots 
+
+## Heat maps 
+
+## 
+
+## Discussion
+People that are quoted are often public figures.
+Quotes are usually not said in an informal context.
+
+
+## Conclusion
