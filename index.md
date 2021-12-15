@@ -22,11 +22,21 @@ Please follow us on this journey, in which we find out what we can (or maybe mor
 Box plots 
 ![alt text](./assets/img/Plots-01.png)
 
-## Heat maps 
+## Heat maps and Distributions
+![alt text](./assets/img/Grid-01.png)
 
-## 
+![alt text](./assets/img/Significant_dist_01.png)
 
+![alt text](./assets/img/Gender_dist-01.png)
+
+
+
+## Model Fitting, Clustering and PCA
+![alt text](./assets/img/pca_gender.png)
+
+![alt text](./assets/img/clustering.png)
 ## Discussion
+
 People that are quoted are often public figures.
 Quotes are usually not said in an informal context.
 
