@@ -23,6 +23,9 @@ Box plots
 ![alt text](./assets/img/Plots-01.png)
 
 ## Heat maps and Distributions
+
+$$Score_{max} = \frac{1}{\max_{P_{i}}}$$
+
 ![alt text](./assets/img/Grid-01.png)
 
 ![alt text](./assets/img/Significant_dist_01.png)
