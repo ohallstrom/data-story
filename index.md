@@ -14,7 +14,7 @@ in which we can not tell exactly who you are simply by looking at the used langu
 Please follow us on this journey, in which we present the differences (or maybe more appropriately the lack of them?) between speakers and their attributes.
 
 ## What data is our story based on?
-
+![alt text](./assets/img/Features.png)
 
 ## What does our data look like?
 Box plots 
