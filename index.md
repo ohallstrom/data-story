@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Tell me how you speak and I won't tell you who you are                   
-subtitle: An unfortunate data story                     
+title:                    
+subtitle:                      
 cover-img: /assets/img/Background_f-01.png
 ---
 ## No patterns do not mean no success.
