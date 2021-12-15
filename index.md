@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: Hello
 subtitle: An Unfortunate Data Story
 cover-img: /assets/img/Title.png
 ---
