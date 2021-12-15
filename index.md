@@ -14,9 +14,9 @@ in which we can not tell exactly who you are simply by looking at the used langu
 
 Please follow us on this journey, in which we find out what we can (or maybe more appropriately can't) say about someone base on their language usage.
 
-![alt text](./assets/img/Degree_box_01.png) ![alt text](./assets/img/Birth_box_01.png)
-![alt text](./assets/img/Gender_box_01.png) ![alt text](./assets/img/Religion_box_01.png)
-![alt text](./assets/img/Occupation_box_01.png) ![alt text](./assets/img/Nationality_box_01.png)
+![alt text](./assets/img/Degree_box-01.png) ![alt text](./assets/img/Birth_box-01.png)
+![alt text](./assets/img/Gender_box-01.png) ![alt text](./assets/img/Religion_box-01.png)
+![alt text](./assets/img/Occupation_box-01.png) ![alt text](./assets/img/Nationality_box-01.png)
 
 
 ## What data is our story based on?
