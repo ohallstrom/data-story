@@ -24,7 +24,7 @@ Box plots
 
 ## Heat maps and Distributions
 
-$$Score_{max} = \frac{1}{\max_{P_{i}}}$$
+$Score_{max} = \frac{1}{\max_{P_{i}}}$
 
 ![alt text](./assets/img/Grid-01.png)
 
