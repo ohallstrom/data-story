@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello
-subtitle: An Unfortunate Data Story
+title:                            
+subtitle:                           
 cover-img: /assets/img/Title.png
 ---
 ## No patterns do not mean no success.
