@@ -29,7 +29,7 @@ Box plots
 
 ## Gender Bias?
 
-![alt text](./assets/img/Gender_dist-01.png)
+![alt text](./assets/img/Gender_dist_new.png)
 
 
 
