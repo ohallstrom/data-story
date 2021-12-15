@@ -26,6 +26,8 @@ Box plots
 ![alt text](./assets/img/Grid-01.png)
 
 ![alt text](./assets/img/Significant_dist_01.png)
+<br/><br/>
+<br/><br/>
 ![alt text](./assets/img/Quotes.png)
 ## Gender Bias?
 
