@@ -1,6 +1,6 @@
 ---
 layout: page
-title: -
+title: None
 subtitle:                      
 cover-img: /assets/img/Background_f-01.png
 ---
