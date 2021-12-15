@@ -1,9 +1,9 @@
 ---
-title: Fuck Raph
+title: Un unfortunate data story
 cover-img: "assets/img/Title.png"
 ---
 
-## No patterns do not mean no success.
+## An unfortunate data story
 We started this project, in which we analyse millions of quotes, with the goal of finding patterns between language use and speaker attributes. Maybe we could have gotten answers to questions such as:
 
 * Are people who speak about the past usually older?
