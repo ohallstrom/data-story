@@ -1,5 +1,5 @@
 ---
-title: ö
+title: .
 cover-img: "assets/img/Title.png"
 ---
 ## No patterns do not mean no success.
