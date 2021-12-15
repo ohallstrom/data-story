@@ -6,7 +6,7 @@
 
 In this project we are analysing the large dataset [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf)
 
-Click [here](https://ohallstrom.github.io/data-story/) to reach our website.
+Click [here](https://ohallstrom.github.io/data-story/) to reach our website with the data story.
 
 To cope with limited computing resources, we use a sample of the data in the data story. However, we actually did create features for the millions of quotes available, as well as having a look at the speaker attributes for all of the quotes. Below you can see an early plot from our project (without the final graphic profile), showing the distribution of speaker attributes for all of the 47 779 271 quotes we treated.
 
