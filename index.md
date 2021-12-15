@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Tell me how you speak and I won't tell you who you are
+title: 
 subtitle: An Unfortunate Data Story
-cover-img: /assets/img/Background_f-01.png
+cover-img: /assets/img/Title.png
 ---
 ## No patterns do not mean no success.
 We started this project, in which we analyse millions of quotes, with the goal of finding patterns between language use and speaker attributes. Maybe we could have gotten answers to questions such as:
