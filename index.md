@@ -14,15 +14,13 @@ in which we can not tell exactly who you are simply by looking at the used langu
 
 Please follow us on this journey, in which we find out what we can (or maybe more appropriately can't) say about someone base on their language usage.
 
-![alt text](./assets/img/Plots-01.png)
-
-
 
 ## What data is our story based on?
 ![alt text](./assets/img/Features.png)
 
 ## What does our data look like?
 Box plots 
+![alt text](./assets/img/Plots-01.png)
 
 ## Heat maps 
 
