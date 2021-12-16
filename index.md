@@ -21,7 +21,7 @@ We created lexical features for the millions of quotes available and combined it
 
 Since images speak louder than words, below are the distributions of the speaker attributes for all of the quotes in our sample: 
 
-## TODO: ADD RAPH's PLOT
+![alt text](./assets/img/sample_distribution.png)
 
 Even though we cannot be certain, it seems like the speakers are dominated by North Americans, Christians, and Males...
 
@@ -29,17 +29,14 @@ To show the lexical features that this story is based on, we have used a quote b
 
 ![alt text](./assets/img/Features.png)
 
-# TODO: Correct typos in image
-# TODO: Accept Oskar's proposition
-
+<!-- [TODO] Accept Oskar's proposition -->
 If you did the math, you might have expected a higher verb count for the given quote. However, we do not include modal auxiliaries when counting the verbs, so 'can' is not counted as a verb. Also, you might have expected the superlative ratio to be the highest adjective ratio. But the ratios for adjectives are, due to our pos-tagging on single words, only identifying single word comparative adjectives and superlatives. Whenever an adjective is constructed with a 'more' or 'most' in front of it, it is still counted as an ordinal adjective. That is why we do not include these ratios in our further analysis. Please refer to our [README](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/README.md) for a more in depth description of the lexical features.
 
 ## What does our data look like?
 
 Here is a sneak peak on how the lexical features are mapped to speaker attributes. The boxplots shown are just a fraction of all combinations of lexical features and speaker attributes. We only show one boxplot per lexical feature here, but you can explore as much as you want to satisfy your “data hunger” [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb).
 
-# TODO: increase readability of labels?
-
+<!-- [TODO] Increase readability of labels? -->
 ![alt text](./assets/img/Plots-01.png)
 
 ## Heat maps and distributions
