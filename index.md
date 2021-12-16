@@ -48,9 +48,9 @@ In order to identify the major differences between the language usage of differe
 
 ## TODO: Formula formatting problem
 
-$Score_{med} = \frac{1}{\med_{P_{i}}}$
+$$Score_{med} = \frac{1}{\med_{P_{i}}}$$
 
-$Score_{max} = \frac{1}{\max_{P_{i}}}$
+$$Score_{max} = \frac{1}{\max_{P_{i}}}$$
 
 ![alt text](./assets/img/Grid-01.png)
 
