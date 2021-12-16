@@ -66,7 +66,7 @@ Significant differences can be seen between various lexical features and date of
 <br/><br/>
 <br/><br/>
 ![alt text](./assets/img/Quotes.png)
-## TODO: Ralph add his comment
+These two quotes found on Quotebank have been selected as they perfectly support the previous findings: Margot Robbie, a famous actress, uses 4 self pronouns ('I', 'my', 'my', 'I') out of 4 pronouns; whereas Chuck Schumer, a politician, uses 4 union pronouns ('We' 4 times) and  1 other pronoun ('You'). Margot Robbie's quote's union_ratio and self_ratio are respectively -1 and 1, while Chuck Schumer's quote's union_ratio self_ratio are respectively 0.8 and -1.
 
 Among the distributions with statistically significant differences, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a difference in the distributions of pronouns and the number of words used between North America and Asia. 
 
