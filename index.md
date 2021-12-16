@@ -15,9 +15,9 @@ However, we could not find sufficient patterns between speakers and the way they
 
 ## What data is our story based on?
 
-We were given a gigantic amount of data: quotes extracted from newspapers from 2015 to 2020, tens of millions of rows to work with. But that is great, the bigger the data, the more trust-worthy the study. After some intense pre-processing and filtering -- you can read more about it in [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/Milestone%202/preprocessing_notebook.ipynb) Notebook. We eventually ended up working with exactly 47 779 271 quotes, shared between 451 041 different unique speakers. For the sake of the study, filtering has been performed in order to keep speakers that were born between 1928 and 2016, as it would not make much sense to study the speech of an ancient Roman emperor or a young baby barely able to talk in our contemporary context. For this analysis, six different speaker features were kept: year of birth, gender, occupation, academic degree, and nationality. 
+We were given a gigantic amount of data: quotes extracted from newspapers from 2015 to 2020, tens of millions of rows to work with. But that is great, the bigger the data, the more trust-worthy the study. After some intense pre-processing and filtering -- you can read more about it [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/Milestone%202/preprocessing_notebook.ipynb) Notebook. We eventually ended up working with exactly 47 779 271 quotes, shared between 451 041 different unique speakers. For the sake of the study, filtering has been performed in order to keep speakers that were born between 1928 and 2016, as it would not make much sense to study the speech of an ancient Roman emperor or a young baby barely able to talk in our contemporary context. For this analysis, six different speaker features were kept: year of birth, gender, occupation, academic degree, and nationality. 
 
-We created features for the millions of quotes available, as well as looked at the speaker attributes for all of the quotes. To cope with limited computing resources, we use a sample of the data to form this data story. However, an early plot from our project, showing the distribution of speaker attributes for all of the 47 779 271 quotes we treated, can be found on this [link](https://github.com/ohallstrom/data-story/blob/master/assets/img/AllQuotesDistribFinal.png).
+We created features for the millions of quotes available, as well as looked at the speaker attributes for all of the quotes. To cope with limited computing resources, we use a sample of the data to form this data story. You can find an early plot from our project, showing the distribution of speaker attributes for all of the 47 779 271 quotes we treated, [here](https://github.com/ohallstrom/data-story/blob/master/assets/img/AllQuotesDistribFinal.png).
 
 Anyways, images speak louder than words so below are the distributions of the speaker attributes for all of the quotes in our sample: 
 
@@ -36,7 +36,7 @@ If you did the math, you might had expected a higher verb count for the given qu
 
 ## What does our data look like?
 
-Here is a sneak peak on how the lexical features are mapped to speaker attributes. The boxplots shown are just a fraction of all combinations of lexical features and speaker attributes. We only show one boxplot per lexical feature here, but you can explore as much as you want to satisfy your “data hunger” with [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb) Notebook.
+Here is a sneak peak on how the lexical features are mapped to speaker attributes. The boxplots shown are just a fraction of all combinations of lexical features and speaker attributes. We only show one boxplot per lexical feature here, but you can explore as much as you want to satisfy your “data hunger” [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb).
 
 # TODO: increase readability of labels?
 
@@ -56,7 +56,7 @@ $Score_{max} = \frac{1}{\max_{P_{i}}}$
 
 As seen from the figures above, it seems that some cells embed significant differences in their distribution. These cells exhibit a high score value either in terms of median or in terms of maximum observed p-value. Large differences are observed from both the median and maximum grid. For instance in [Occupation,Pronoun_per_word], [Gender,Self_Ratio], [Gender,Union_Ratio] … We might be discovering something huge in terms of socio-cultural and language research -- An ADAventurer’s dream coming true. But wait a second, why is the median score so low? Does it mean that only specific pairs within a speaker attribute are different?
 
-We can now look more closely at the most significant and least significant differences by plotting their distributions. We provide you with the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distribution can be found in [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb) Notebook.
+We can now look more closely at the most significant and least significant differences by plotting their distributions. We provide you with the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distribution can be found [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb).
 ## TODO: Don't we need to add the plots such as self_ratio for artists and politicians in the notebook above
 ## TODO: Title below implies that a pair can be stat. significant. Isn't it the difference that is significant?
 ## Distribution of statistically significant pairs
