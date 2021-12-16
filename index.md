@@ -54,10 +54,7 @@ Significant differences can be seen between various lexical features and date of
 <br/><br/>
 <br/><br/>
 ![alt text](./assets/img/Quotes.png)
-# Quote image wrong? Ralph add his stuff
-“You know, we have three branches of government. We have a house. We have a senate. We have a president.” – Chuck Schumer, US senator (dem), born 1950
-
-“Once I put on the wig, which altered my hairline, and bleached my eyebrows, I started to see Tonya [Harding].” - Margot Robbie, actress, born 1990
+# Ralph add his comment
 
 Apart from the pairings with high significance rankings, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a significant difference in the distributions of pronouns and the number of words used between North America and Asia. 
 
