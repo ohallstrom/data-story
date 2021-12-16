@@ -54,14 +54,13 @@ $Score_{max} = \frac{1}{\max_{P_{i}}}$
 
 ![alt text](./assets/img/Grid-01.png)
 
-As seen from the figures above, it seems that some cells embed significant differences in their distribution. These cells exhibit a high score value either in terms of median or in terms of maximum observed p-value. Large differences are observed from both the median and maximum grid. For instance in [Occupation,Pronoun_per_word], [Gender,Self_Ratio], [Gender,Union_Ratio] … We might be discovering something huge in terms of socio-cultural and language research -- An ADAventurer’s dream coming true. But wait a second, why is the median score so low? Does it mean that only specific pairs within a speaker attribute are different?
+As seen from the figures above, it seems that some cells embed significant differences in their distribution. These cells exhibit a high score value either in terms of median or in terms of maximum observed p-value. Large differences are observed from both the median and maximum grid. For instance in [Occupation, Pronoun_per_word], [Gender, Self_Ratio], [Gender, Union_Ratio] … We might be discovering something huge in terms of socio-cultural and language research -- An ADAventurer’s dream coming true. But wait a second, why is the median score so low? Does it mean that only specific pairs within a speaker attribute are different?
 
-We can now look more closely at the most significant and least significant differences by plotting their distributions. We provide you with the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distribution can be found [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb).
+We looked more closely at the most significant and least significant differences by plotting their distributions. Here are the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distributions can be found [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb).
 ## TODO: Don't we need to add the plots such as self_ratio for artists and politicians in the notebook above
-## TODO: Title below implies that a pair can be stat. significant. Isn't it the difference that is significant?
-## Distribution of statistically significant pairs
 
-Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician -- Well, that’s obvious and quite intuitive! Can we get to the juicy part?
+### Distributions with most significant differences
+Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician -- Well, that is obvious and quite intuitive! Can we get to the juicy part?
 
 ![alt text](./assets/img/Significant_dist_01.png)
 <br/><br/>
@@ -69,13 +68,13 @@ Significant differences can be seen between various lexical features and date of
 ![alt text](./assets/img/Quotes.png)
 ## TODO: Ralph add his comment
 
-Apart from the pairings with high significance rankings, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a significant difference in the distributions of pronouns and the number of words used between North America and Asia. 
+Among the distributions with statistically significant differences, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a difference in the distributions of pronouns and the number of words used between North America and Asia. 
 
-We know you probably went all the way to the bottom of this hoping to find something about gender biases -- quite a hot topic. But you’ll probably not find what you are looking for.  
+We know you probably went all the way to the bottom of this hoping to find something about gender biases -- quite a hot topic. But you will probably not find what you are looking for.  
 
 ![alt text](./assets/img/Gender_dist_new.png)
 
-Men and women are kind of similar from a talking point of view. The distribution in terms of sentiment, pronouns, and reference to the “self” show a lot of overlap. Other lexical features / speaker attributes combinations show similar insignificant differences.
+Men and women displayed similar speech patterns. The distribution in terms of sentiment, pronouns, and reference to the “self” show a lot of overlap. Other lexical features / speaker attribute combinations show similar insignificant differences.
 
 ## What now?
 
