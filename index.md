@@ -42,24 +42,57 @@ $Score_{max} = \frac{1}{\max_{P_{i}}}$
 
 ![alt text](./assets/img/Grid-01.png)
 
+As seen from the figures above, it seems that some cells embed significant differences in their distribution. These cells exhibit a high score value either in terms of median or in terms of maximum observed p-value. Large differences are observed from both the median and maximum grid. For instance in [Occupation,Pronoun_per_word], [Gender,Self_Ratio], [Gender,Union_Ratio] … We might be discovering something huge in terms of socio-cultural and language research -- An ADAventurer’s dream coming true. But wait a second, why is the median score so low? Does it mean that only specific pairs within a speaker attribute are different?
+
+We can now look more closely at the most significant and least significant differences by plotting their distributions. We provide you with the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distribution can be found in [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb) Notebook.
+# Don't we need to add the plots such as self_ratio for artists and politicians in the notebook above
+# Title below implies that a pair can be stat. significant. Isn't it the difference that is significant?
+## Distribution of statistically significant pairs
+Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician -- Well, that’s obvious and quite intuitive! Can we get to the juicy part?
+
 ![alt text](./assets/img/Significant_dist_01.png)
 <br/><br/>
 <br/><br/>
 ![alt text](./assets/img/Quotes.png)
-## Gender Bias?
+# Quote image wrong? Ralph add his stuff
+“You know, we have three branches of government. We have a house. We have a senate. We have a president.” – Chuck Schumer, US senator (dem), born 1950
+
+“Once I put on the wig, which altered my hairline, and bleached my eyebrows, I started to see Tonya [Harding].” - Margot Robbie, actress, born 1990
+
+Apart from the pairings with high significance rankings, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a significant difference in the distributions of pronouns and the number of words used between North America and Asia. 
+
+We know you probably went all the way to the bottom of this hoping to find something about gender biases -- quite a hot topic. But you’ll probably not find what you are looking for.  
 
 ![alt text](./assets/img/Gender_dist_new.png)
 
+Men and women are kind of similar from a talking point of view. The distribution in terms of sentiment, pronouns, and reference to the “self” show a lot of overlap. Other lexical features / speaker attributes combinations show similar insignificant differences.
 
+## What now?
+
+Should we just call it a day and stop here? Based on the previous observations we have demonstrated some interesting differences in the distributions of feature/attribute pairs, as well as many similarities between some speaker attributes. Would that be enough to achieve our goals of predicting a person’s attributes given a sentence? There’s only one way to find out.
 
 ## Model Fitting, Clustering and PCA
+# tables, plots + shord discussion of results
+
+We did tree-based feature selection and then dimensionality reduction using PCA to see if we could cluster different lexical features and to see if different people speak differently. The features found were [',_per_sentence' 'sign_per_token' 'approx_word_count' 'token_count'
+ 'adj_per_word' 'verb_per_word' 'base_ratio' 'pres_ratio' 'past_ratio'
+ 'pronoun_per_word' 'sentiment']. With 6 principle components explaining over 80% of the variance, we could not see any clusters by grouping the main PC’s in 2D. 
+
 ![alt text](./assets/img/pca_gender.png)
 
+The overlap between the gender’s lexical features makes it impossible to visualize clusters in 2 dimensions. As shown above, the clusters for males and females cannot be separated. This was the case for all speaker features. We decided to investigate clusters in higher dimensions. When clustering in 6 dimensions using six principal components of lexical features, the distributions per cluster were very similar for all the clusters with sufficient data points to draw any conclusions. We therefore tried clustering in the unprojected space, using the 6 lexical features for which the U-test gave the most significant differences, however without any notable improvement. Consequently, this method does not seem to help for the task of classifying the speaker based on the lexical features of its quote. The distributions of speaker attributes within the resulting clusters of the last clustering can be seen in the plot below. The silhouette score is 0.48.
+
 ![alt text](./assets/img/clustering.png)
+
+Since the original goal was to predict things about a person based on the way they speak, we also trained Gradient Boosting Regressors on the data. As expected from our previous work, the trained models only had R^2 scores between -0.003 and 0.03 which means they are very inaccurate. The lexical features don’t seem to be an accurate predictor of speaker attributes.
+
 ## Discussion
 
-People that are quoted are often public figures.
-Quotes are usually not said in an informal context.
-
+The main findings came from the statistical analysis with the U-test, which underlines how some lexical features are not distributed the same ways amongst different groups within speaker attributes. The most relevant differences were found for the usage of pronouns per word between people born in the 50s compared to people born in the 90s, the union ratio between artists and politicians, and the pronouns per word between politicians and athletes. 
+Even if these findings are interesting, they have to be very carefully handled. Despite the fact that indeed, people might have different ways of speaking depending on their occupations, it also seems very biased to assert that politicians casually use more ‘union’ pronouns compared to artists. People in both professions mainly are public figures, so their quotes are usually not said in an informal context. Politicians represent the people and are therefore more likely to speak using union pronouns, whereas artists are mainly asked to talk about themselves and their work, which highly encourages them to use ‘self’ pronouns.
+Differences computed between different continents are quite interesting too, but we must keep in mind that there are many biases when making speech analysis between people with different origins: if the quote was originally in a different language than English, then differences might be observed because of the translation or because of intrinsic differences between languages. Even if the quote was originally in English, the speaker’s mother tongue may not be English. In addition, punctuation within the quote depends on the person who documented the quote.
+Despite initially encouraging findings, it seems that the distributions overlap greatly so we cannot  see clear clusters based on the lexical and speaker features that we selected. This could be due to many reasons, including undesired features of the raw data. For example, there are more quotes than speakers, which means certain individuals are over-represented in the dataset. Furthermore, Quotebank may not alway be attributing quotes to the correct speaker.
 
 ## Conclusion
+
+When starting this project, we all had great hopes of coming up with incredible conclusions, we dreamt that our work would be a bomb in the psycho-sociologist world. Unfortunately, no groundbreaking discovery could be done, putting a deadly end to our hopes of fame and sociologist careers. While we did not find what we were looking for, we found something even better, which is that we live in a mult-faceted world with complex actors, in which people cannot guess who we are simply by listening to us talk. How boring and simple would life be if people sharing a bunch of similar socio-cultural features talked in the exact same way?  How boring and simple would life be if people sharing a bunch of similar socio-cultural features talked in the exact same way?
