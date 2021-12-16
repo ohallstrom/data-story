@@ -4,13 +4,17 @@ cover-img: "assets/img/Title.png"
 ---
 
 ## An unfortunate data story
+
 We started this project with the goal of finding patterns between language use and speaker attributes based on the analysis of millions of quotes in the [Quotebank](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf) dataset. Our goal was to answer questions such as:
+
 * How does your socio-cultural background, such as nationality, gender, or religion, affect the way you speak?
 * Are people who speak about the past usually older?
 * Are people who speak with a more positive sentiment usually young?
+* 
 However, we could not find sufficient patterns between speakers and the way they talk to accurately describe the speaker’s attributes based on a given quote. Nevertheless, we are happy with our findings. To live in a less predictable world, in which we cannot tell exactly who a person is simply by looking at the language features of their quotes, is certainly much more fun. Please follow us on this journey, in which we find out what we can (or maybe more appropriately cannot) say about someone based on their language usage.
 
 ## What data is our story based on?
+
 We were given a gigantic amount of data: quotes extracted from newspapers from 2015 to 2020, tens of millions of rows to work with. But that is great, the bigger the data, the more trust-worthy the study. After some intense pre-processing and filtering -- you can read more about it in [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/Milestone%202/preprocessing_notebook.ipynb) Notebook. We eventually ended up working with exactly 47 779 271 quotes, shared between 451 041 different unique speakers. For the sake of the study, filtering has been performed in order to keep speakers that were born between 1928 and 2016, as it would not make much sense to study the speech of an ancient Roman emperor or a young baby barely able to talk in our contemporary context. For this analysis, six different speaker features were kept: year of birth, gender, occupation, academic degree, and nationality. 
 
 We created features for the millions of quotes available, as well as looked at the speaker attributes for all of the quotes. To cope with limited computing resources, we use a sample of the data to form this data story. However, an early plot from our project, showing the distribution of speaker attributes for all of the 47 779 271 quotes we treated, can be found on this [link](https://github.com/ohallstrom/data-story/blob/master/assets/img/AllQuotesDistribFinal.png).
@@ -28,6 +32,7 @@ To show the lexical features that this Data Story is based on, we have used a qu
 Please refer to our [README](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/README.md) for a more in depth description of the features.
 
 ## What does our data look like?
+
 Here is a sneak peak on how the lexical features are mapped to speaker attributes. The boxplots shown are just a fraction of all combinations of lexical features and speaker attributes. We only show one boxplot per lexical feature here, but you can explore as much as you want to satisfy your “data hunger” with [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb) Notebook.
 
 ![alt text](./assets/img/Plots-01.png)
@@ -50,6 +55,7 @@ We can now look more closely at the most significant and least significant diffe
 # Don't we need to add the plots such as self_ratio for artists and politicians in the notebook above
 # Title below implies that a pair can be stat. significant. Isn't it the difference that is significant?
 ## Distribution of statistically significant pairs
+
 Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician -- Well, that’s obvious and quite intuitive! Can we get to the juicy part?
 
 ![alt text](./assets/img/Significant_dist_01.png)
@@ -88,8 +94,11 @@ Since the original goal was to predict things about a person based on the way th
 ## Discussion
 
 The main findings came from the statistical analysis with the U-test, which underlines how some lexical features are not distributed the same ways amongst different groups within speaker attributes. The most relevant differences were found for the usage of pronouns per word between people born in the 50s compared to people born in the 90s, the union ratio between artists and politicians, and the pronouns per word between politicians and athletes. 
+
 Even if these findings are interesting, they have to be very carefully handled. Despite the fact that indeed, people might have different ways of speaking depending on their occupations, it also seems very biased to assert that politicians casually use more ‘union’ pronouns compared to artists. People in both professions mainly are public figures, so their quotes are usually not said in an informal context. Politicians represent the people and are therefore more likely to speak using union pronouns, whereas artists are mainly asked to talk about themselves and their work, which highly encourages them to use ‘self’ pronouns.
+
 Differences computed between different continents are quite interesting too, but we must keep in mind that there are many biases when making speech analysis between people with different origins: if the quote was originally in a different language than English, then differences might be observed because of the translation or because of intrinsic differences between languages. Even if the quote was originally in English, the speaker’s mother tongue may not be English. In addition, punctuation within the quote depends on the person who documented the quote.
+
 Despite initially encouraging findings, it seems that the distributions overlap greatly so we cannot  see clear clusters based on the lexical and speaker features that we selected. This could be due to many reasons, including undesired features of the raw data. For example, there are more quotes than speakers, which means certain individuals are over-represented in the dataset. Furthermore, Quotebank may not alway be attributing quotes to the correct speaker.
 
 ## Conclusion
