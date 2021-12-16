@@ -29,7 +29,9 @@ To show the lexical features that this Data Story is based on, we have used a qu
 
 ![alt text](./assets/img/Features.png)
 
-Please refer to our [README](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/README.md) for a more in depth description of the features.
+# TODO: Accept Oskar's proposition
+
+If you did the math, you might had expected a higher verb ratio for the given quote. The reason for that is that we don't include modal auxiliaries when counting the verbs, so 'can' is not counted. Also, you might would have expected the superlative ratio to be the highest adjective ratio. But the ratios for adjectives are, due to our pos-tagging on single words, are only identifying single word comparative adjectives and superlatives. Whenever an adjective is constructed with a more or most in front of it, it is still counted as an ordinal adjective. That is why we do not include these ratios in our further analysis. Please refer to our [README](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/README.md) for a more in depth description of the features.
 
 ## What does our data look like?
 
