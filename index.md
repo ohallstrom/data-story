@@ -10,7 +10,7 @@ We started this project with the goal of finding patterns between language use a
 * How does your socio-cultural background, such as nationality, gender, or religion, affect the way you speak?
 * Are people who speak about the past usually older?
 * Are people who speak with a more positive sentiment usually young?
-* 
+
 However, we could not find sufficient patterns between speakers and the way they talk to accurately describe the speaker’s attributes based on a given quote. Nevertheless, we are happy with our findings. To live in a less predictable world, in which we cannot tell exactly who a person is simply by looking at the language features of their quotes, is certainly much more fun. Please follow us on this journey, in which we find out what we can (or maybe more appropriately cannot) say about someone based on their language usage.
 
 ## What data is our story based on?
@@ -21,7 +21,7 @@ We created features for the millions of quotes available, as well as looked at t
 
 Anyways, images speak louder than words so below are the distributions of the speaker attributes for all of the quotes in our sample: 
 
-# ADD RAPH's PLOT
+## TODO: ADD RAPH's PLOT
 
 Even though we cannot be certain, it seems like the speakers are dominated by North Americans, Christians and Males...
 
@@ -41,7 +41,7 @@ Here is a sneak peak on how the lexical features are mapped to speaker attribute
 
 In order to identify the major differences between the language usage of different types of speakers, the statistical Mann-Whitney-U-test is applied on the dataset. With this test, the distribution of a particular lexical feature for different speaker attributes are compared. The U-test outputs a p-value which represents the probability of observing these differences in the samples given that they both come from the same underlying distribution. Given the large number of possible U-tests per cell, two different scoring metrics are used:
 
-# Formula formatting problem
+## TODO: Formula formatting problem
 
 $Score_{med} = \frac{1}{\med_{P_{i}}}$
 
@@ -52,8 +52,8 @@ $Score_{max} = \frac{1}{\max_{P_{i}}}$
 As seen from the figures above, it seems that some cells embed significant differences in their distribution. These cells exhibit a high score value either in terms of median or in terms of maximum observed p-value. Large differences are observed from both the median and maximum grid. For instance in [Occupation,Pronoun_per_word], [Gender,Self_Ratio], [Gender,Union_Ratio] … We might be discovering something huge in terms of socio-cultural and language research -- An ADAventurer’s dream coming true. But wait a second, why is the median score so low? Does it mean that only specific pairs within a speaker attribute are different?
 
 We can now look more closely at the most significant and least significant differences by plotting their distributions. We provide you with the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distribution can be found in [this](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb) Notebook.
-# Don't we need to add the plots such as self_ratio for artists and politicians in the notebook above
-# Title below implies that a pair can be stat. significant. Isn't it the difference that is significant?
+## TODO: Don't we need to add the plots such as self_ratio for artists and politicians in the notebook above
+## TODO: Title below implies that a pair can be stat. significant. Isn't it the difference that is significant?
 ## Distribution of statistically significant pairs
 
 Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician -- Well, that’s obvious and quite intuitive! Can we get to the juicy part?
@@ -62,7 +62,7 @@ Significant differences can be seen between various lexical features and date of
 <br/><br/>
 <br/><br/>
 ![alt text](./assets/img/Quotes.png)
-# Ralph add his comment
+## TODO: Ralph add his comment
 
 Apart from the pairings with high significance rankings, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a significant difference in the distributions of pronouns and the number of words used between North America and Asia. 
 
@@ -77,7 +77,7 @@ Men and women are kind of similar from a talking point of view. The distribution
 Should we just call it a day and stop here? Based on the previous observations we have demonstrated some interesting differences in the distributions of feature/attribute pairs, as well as many similarities between some speaker attributes. Would that be enough to achieve our goals of predicting a person’s attributes given a sentence? There’s only one way to find out.
 
 ## Model Fitting, Clustering and PCA
-# tables, plots + shord discussion of results
+## TODO: tables, plots + shord discussion of results?
 
 We did tree-based feature selection and then dimensionality reduction using PCA to see if we could cluster different lexical features and to see if different people speak differently. The features found were [',_per_sentence' 'sign_per_token' 'approx_word_count' 'token_count'
  'adj_per_word' 'verb_per_word' 'base_ratio' 'pres_ratio' 'past_ratio'
