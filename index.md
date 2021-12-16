@@ -46,7 +46,7 @@ In order to identify the major differences between the language usage of differe
 ![alt text](./assets/img/Scores.png)
 
 
-![alt text](./assets/img/Grid-01.png)
+![alt text](./assets/img/Grid_v2-01.png)
 
 As seen from the figures above, it seems that some cells embed significant differences in their distribution. These cells exhibit a high score value either in terms of median or in terms of maximum observed p-value. Large differences are observed from both the median and maximum grid. For instance in [Occupation, Pronoun_per_word], [Gender, Self_Ratio], [Gender, Union_Ratio] … We might be discovering something huge in terms of socio-cultural and language research -- An ADAventurer’s dream coming true. But wait a second, why is the median score so low? Does it mean that only specific pairs within a speaker attribute are different?
 
