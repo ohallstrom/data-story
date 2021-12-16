@@ -36,6 +36,8 @@ Here is a sneak peak on how the lexical features are mapped to speaker attribute
 
 In order to identify the major differences between the language usage of different types of speakers, the statistical Mann-Whitney-U-test is applied on the dataset. With this test, the distribution of a particular lexical feature for different speaker attributes are compared. The U-test outputs a p-value which represents the probability of observing these differences in the samples given that they both come from the same underlying distribution. Given the large number of possible U-tests per cell, two different scoring metrics are used:
 
+# Formula formatting problem
+
 $Score_{med} = \frac{1}{\med_{P_{i}}}$
 
 $Score_{max} = \frac{1}{\max_{P_{i}}}$
