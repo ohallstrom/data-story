@@ -11,28 +11,28 @@ We started this project with the goal of finding patterns between language use a
 * Are people who speak about the past usually older?
 * Are people who speak with a more positive sentiment usually young?
 
-However, we could not find sufficient patterns between speakers and the way they talk to accurately describe the speaker’s attributes based on a given quote. Nevertheless, we are happy with our findings. To live in a less predictable world, in which we cannot tell exactly who a person is simply by looking at the language features of their quotes, is certainly much more fun. Please follow us on this journey, in which we find out what we can (or maybe more appropriately cannot) say about someone based on their language usage.
+However, we could not find sufficient patterns between speakers and the way they talk to accurately describe a speaker based solely on their quotes. Nevertheless, we are happy with our findings. To live in a less predictable world, in which we cannot tell exactly who a person is simply by looking at the language features of their quotes, is certainly much more fun. Please follow us on this journey, in which we find out what we can (or maybe more appropriately cannot) say about someone based on their language usage.
 
 ## What data is our story based on?
 
-We were given a gigantic amount of data: quotes extracted from newspapers from 2015 to 2020, tens of millions of rows to work with. But that is great, the bigger the data, the more trust-worthy the study. After some intense pre-processing and filtering -- you can read more about it [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/Milestone%202/preprocessing_notebook.ipynb) Notebook. We eventually ended up working with exactly 47 779 271 quotes, shared between 451 041 different unique speakers. For the sake of the study, filtering has been performed in order to keep speakers that were born between 1928 and 2016, as it would not make much sense to study the speech of an ancient Roman emperor or a young baby barely able to talk in our contemporary context. For this analysis, six different speaker features were kept: year of birth, gender, occupation, academic degree, and nationality. 
+We were given a gigantic amount of data: quotes extracted from newspapers from 2015 to 2020, tens of millions of rows to work with. But that is great, the bigger the data, the more trust-worthy the study. After some intense pre-processing and filtering (you can read more about it [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/Milestone%202/preprocessing_notebook.ipynb)), we eventually ended up working with exactly 47 779 271 quotes, shared between 451 041 different unique speakers. For the sake of the study, filtering has been performed in order to keep speakers that were born between 1928 and 2016, as it would not make much sense to study the speech of an ancient Roman emperor or a young baby barely able to talk in our contemporary context. Six different speaker attributes were kept: year of birth, gender, occupation, academic degree, and nationality. 
 
-We created features for the millions of quotes available, as well as looked at the speaker attributes for all of the quotes. To cope with limited computing resources, we use a sample of the data to form this data story. You can find an early plot from our project, showing the distribution of speaker attributes for all of the 47 779 271 quotes we treated [here](https://github.com/ohallstrom/data-story/blob/master/assets/img/AllQuotesDistribFinal.png).
+We created lexical features for the millions of quotes available and combined it with the speaker attributes for all of the quotes. To cope with limited computing resources, we use a sample of the data to form this data story. You can find an early plot from our project, showing the distribution of speaker attributes for all of the 47 779 271 quotes we treated [here](https://github.com/ohallstrom/data-story/blob/master/assets/img/AllQuotesDistribFinal.png).
 
-Anyways, images speak louder than words so below are the distributions of the speaker attributes for all of the quotes in our sample: 
+Since images speak louder than words, below are the distributions of the speaker attributes for all of the quotes in our sample: 
 
 ## TODO: ADD RAPH's PLOT
 
-Even though we cannot be certain, it seems like the speakers are dominated by North Americans, Christians and Males...
+Even though we cannot be certain, it seems like the speakers are dominated by North Americans, Christians, and Males...
 
-To show the lexical features that this Data Story is based on, we have used a quote by the R.O.C.K team’s spiritual leader Dwayne Johnson, also known as The Rock. For each quote in Quotebank, the features seen in the following image were generated. 
+To show the lexical features that this story is based on, we have used a quote by the R.O.C.K team’s spiritual leader Dwayne Johnson, also known as The Rock. For each quote in Quotebank, the features seen in the following image were generated. 
 
 ![alt text](./assets/img/Features.png)
 
 # TODO: Correct typos in image
 # TODO: Accept Oskar's proposition
 
-If you did the math, you might had expected a higher verb count for the given quote. Don't worry, the reason for that is that we don't include modal auxiliaries when counting the verbs, so 'can' is not counted. Also, you might would have expected the superlative ratio to be the highest adjective ratio. But the ratios for adjectives are, due to our pos-tagging on single words, are only identifying single word comparative adjectives and superlatives. Whenever an adjective is constructed with a more or most in front of it, it is still counted as an ordinal adjective. That is why we do not include these ratios in our further analysis. Please refer to our [README](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/README.md) for a more in depth description of the features.
+If you did the math, you might have expected a higher verb count for the given quote. However, we do not include modal auxiliaries when counting the verbs, so 'can' is not counted as a verb. Also, you might have expected the superlative ratio to be the highest adjective ratio. But the ratios for adjectives are, due to our pos-tagging on single words, only identifying single word comparative adjectives and superlatives. Whenever an adjective is constructed with a 'more' or 'most' in front of it, it is still counted as an ordinal adjective. That is why we do not include these ratios in our further analysis. Please refer to our [README](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/README.md) for a more in depth description of the lexical features.
 
 ## What does our data look like?
 
