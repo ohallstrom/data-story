@@ -53,14 +53,16 @@ As seen from the figures above, it seems that some cells embed significant diffe
 We looked more closely at the most significant and least significant differences by plotting their distributions. Here are the top 4 pairs of distributions with the most significant difference, as well as the top 2 pairs of distributions with the least significant difference. Specific feature/attribute distributions can be found [here](https://github.com/epfl-ada/ada-2021-project-r-o-c-k/blob/main/feature_exploration.ipynb).
 
 ### Distributions with most significant differences
-Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician -- Well, that is obvious and quite intuitive! Can we get to the juicy part?
+Significant differences can be seen between various lexical features and date of birth and occupation, shown below. The following can be said: First, speakers born in the 90s seem to use more pronouns than those from the 50s. Second, differences are observed between Politicians and other occupations such as Arts and Sports. Politicians speak more about “us” as a group than artists. And for the ones who only mention themselves in the quotes, it is more likely that they are an artist than a politician. 
 
 ![alt text](./assets/img/Significant_dist_01.png)
-<br/><br/>
-<br/><br/>
-![alt text](./assets/img/Quotes.png)
 
 These two quotes found on Quotebank have been selected as they perfectly support the previous findings: Margot Robbie, a famous actress, uses 4 self pronouns ('I', 'my', 'my', 'I') out of 4 pronouns; whereas Chuck Schumer, a politician, uses 4 union pronouns ('We' 4 times) and  1 other pronoun ('You'). Margot Robbie's quote's union_ratio and self_ratio are respectively -1 and 1, while Chuck Schumer's quote's union_ratio self_ratio are respectively 0.8 and -1.
+
+![alt text](./assets/img/Quotes.png)
+
+
+Well, what we have talked about so far is quite obvious and intuitive! Can we get to the juicy part? 
 
 Among the distributions with statistically significant differences, we can also see interesting relationships in pairings with lower rankings. Looking at the nationality, one can notice a difference in the distributions of pronouns and the number of words used between North America and Asia. 
 
